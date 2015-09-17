@@ -11,7 +11,8 @@
 
   </head>
   <body lang="zh-tw">
-    <div style='background: url(images/bg02.jpg)'>
+    <img id='b' src='images/bg02.jpg'>
+    <div id='d'>
         <img src='images/bg01.png' />
         <div>
             <img src='images/wt_01.png' />
@@ -21,5 +22,8 @@
             <a href='http://hyperurl.co/bj2fh5' target='_blank'></a>
         </div>
     </div>
+    <script type="text/javascript">
+      document.getElementById('d').style.background = "url('" + document.getElementById('b').src + "')";
+    </script>
   </body>
 </html>

@@ -31,7 +31,9 @@ html {
     color: rgba(50, 50, 50, 0.8);
 
     @include font-smoothing(antialiased);
-
+    > img {
+      display: none;
+    }
     > div {
       position: relative;
       z-index: 0;
