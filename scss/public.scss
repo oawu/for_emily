@@ -23,7 +23,6 @@ html {
   body {
     position: relative;
     display: inline-block;
-    text-align: center;
     margin: 0;
     width: 100%;
     height: 100%;
@@ -36,16 +35,16 @@ html {
     > div {
       position: relative;
       z-index: 0;
+      text-align: center;
+
       @media screen and (min-width: 0) and (max-width: #{$w1 - 1px}) {
         // background: rgba(255, 255, 255, 1) !important;
-      }
-      .w1 {
-        @media screen and (min-width: 0) and (max-width: #{$w1 - 1px}) {
+        .w1 {
           display: none;
         }
       }
-      .w2 {
-        @media screen and (min-width: $w1) {
+      @media screen and (min-width: $w1) {
+        .w2 {
           display: none;
         }
       }
@@ -57,6 +56,26 @@ html {
         z-index: -1;
       }
       > div {
+        position: relative;
+        margin: 0 auto;
+        display: inline-block;
+        width: 100%;
+        max-width: $w2;
+
+        > a {
+          position: absolute;
+          left: 15.5%;
+          top: 55.5%;
+          width: 30%;
+          height: 17.5%;
+          display: inline-block;
+          @media screen and (min-width: 0) and (max-width: #{$w1 - 1px}) {
+            left: 10.7%;
+            top: 43.1%;
+            width: 81.5%;
+            height: 13.3%;
+          }
+        }
         img {
           @media screen and (min-width: 0) and (max-width: #{$w1 - 1px}) {
             width: 100%;
@@ -64,6 +83,7 @@ html {
           @media screen and (min-width: $w1) and (max-width: #{$w2 - 1px}) {
             width: 100%;
           }
+          width: 100%;
         }
       }
     }
