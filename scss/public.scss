@@ -37,17 +37,6 @@ html {
       z-index: 0;
       text-align: center;
 
-      @media screen and (min-width: 0) and (max-width: #{$w1 - 1px}) {
-        // background: rgba(255, 255, 255, 1) !important;
-        .w1 {
-          display: none;
-        }
-      }
-      @media screen and (min-width: $w1) {
-        .w2 {
-          display: none;
-        }
-      }
       > img {
         position: absolute;
         top: 0;
@@ -84,6 +73,17 @@ html {
             width: 100%;
           }
           width: 100%;
+
+          @media screen and (min-width: 0) and (max-width: #{$w1 - 1px}) {
+            &:nth-child(1), &:nth-child(2) {
+              display: none;
+            }
+          }
+          @media screen and (min-width: $w1) {
+            &:nth-child(3), &:nth-child(4) {
+              display: none;
+            }
+          }
         }
       }
     }
