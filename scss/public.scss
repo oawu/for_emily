@@ -55,17 +55,80 @@ html {
 
         > a {
           position: absolute;
-          left: 15.5%;
-          top: 55.5%;
-          width: 30%;
-          height: 17.5%;
           display: inline-block;
-          @media screen and (min-width: 0) and (max-width: #{$w1 - 1px}) {
-            left: 10.7%;
-            top: 43.1%;
-            width: 81.5%;
-            height: 13.3%;
+          &:first-child {
+            left: 15.5%; top: 20.5%; width: 30%; height: 6.5%;
+
+            @media screen and (min-width: 0) and (max-width: #{$w1 - 1px}) {
+              left: 10.7%; top: 13.3%; width: 81.5%; height: 4%;
+            }
           }
+          &:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-child(5) {
+            left: 34%; top: 40.75%; width: 13%; height: 8.5%;
+            @media screen and (min-width: 0) and (max-width: #{$w1 - 1px}) {
+              left: 41%; top: 31.3%; width: 58.5%; height: 4%;
+            }
+          }
+          &:nth-child(3) { left: 48.9%;
+            @media screen and (min-width: 0) and (max-width: #{$w1 - 1px}) {
+              left: 41%; top: 35.7%;
+            }
+          }
+          &:nth-child(4) { left: 63.9%;
+            @media screen and (min-width: 0) and (max-width: #{$w1 - 1px}) {
+              left: 41%; top: 40.05%;
+            }
+          }
+          &:nth-child(5) { left: 78.7%;
+            @media screen and (min-width: 0) and (max-width: #{$w1 - 1px}) {
+              left: 41%; top: 44.4%;
+            }
+          }
+
+          &:nth-child(6), &:nth-child(7), &:nth-child(8), &:nth-child(9) {
+            left: 34%; top: 60.85%; width: 13%; height: 8.5%;
+            @media screen and (min-width: 0) and (max-width: #{$w1 - 1px}) {
+              left: 41%; top: 54.3%; width: 58.5%; height: 4%;
+            }
+          }
+          &:nth-child(7) { left: 48.9%;
+            @media screen and (min-width: 0) and (max-width: #{$w1 - 1px}) {
+              left: 41%; top: 58.7%;
+            }
+          }
+          &:nth-child(8) { left: 63.9%;
+            @media screen and (min-width: 0) and (max-width: #{$w1 - 1px}) {
+              left: 41%; top: 63.05%;
+            }
+          }
+          &:nth-child(9) { left: 78.7%;
+            @media screen and (min-width: 0) and (max-width: #{$w1 - 1px}) {
+              left: 41%; top: 67.4%;
+            }
+          }
+
+          &:nth-child(10), &:nth-child(11), &:nth-child(12), &:nth-child(13) {
+            left: 34%; top: 81.6%; width: 13%; height: 8.5%;
+            @media screen and (min-width: 0) and (max-width: #{$w1 - 1px}) {
+              left: 41%; top: 76.7%; width: 58.5%; height: 4%;
+            }
+          }
+          &:nth-child(11) { left: 48.9%;
+            @media screen and (min-width: 0) and (max-width: #{$w1 - 1px}) {
+              left: 41%; top: 81.15%;
+            }
+          }
+          &:nth-child(12) { left: 63.9%;
+            @media screen and (min-width: 0) and (max-width: #{$w1 - 1px}) {
+              left: 41%; top: 85.5%;
+            }
+          }
+          &:nth-child(13) { left: 78.7%;
+            @media screen and (min-width: 0) and (max-width: #{$w1 - 1px}) {
+              left: 41%; top: 89.85%;
+            }
+          }
+
         }
         img {
           @media screen and (min-width: 0) and (max-width: #{$w1 - 1px}) {
@@ -77,12 +140,12 @@ html {
           width: 100%;
 
           @media screen and (min-width: 0) and (max-width: #{$w1 - 1px}) {
-            &:nth-child(1), &:nth-child(2) {
+            &[src^="images/wt_"] {
               display: none;
             }
           }
           @media screen and (min-width: $w1) {
-            &:nth-child(3), &:nth-child(4) {
+            &[src^="images/m_"] {
               display: none;
             }
           }
