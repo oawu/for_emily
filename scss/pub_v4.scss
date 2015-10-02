@@ -173,6 +173,43 @@ html {
               left: 59.3%; top: 92.19%; width: 36.6%; height: 6.9%;
             }
           }
+
+          &:nth-child(34) {
+            left: 9.7%; top: 89.01%; width: 19.5%; height: 9.2%;
+            @media screen and (min-width: 0) and (max-width: #{$w1 - 1px}) {
+              left: 20.5%; top: 84.83%; width: 36.6%; height: 6.9%;
+            }
+          }
+          &:nth-child(35) {
+            left: 8.3%; top: 30.6%; width: 16%; height: 4.7%;
+            @media screen and (min-width: 0) and (max-width: #{$w1 - 1px}) {
+              left: 20.5%; top: 84.83%; width: 36.6%; height: 6.9%;
+            }
+          }
+          &:nth-child(36) {
+            left: 25.3%; top: 30.6%; width: 16%; height: 4.7%;
+            @media screen and (min-width: 0) and (max-width: #{$w1 - 1px}) {
+              left: 59.3%; top: 84.83%; width: 36.6%; height: 6.9%;
+            }
+          }
+          &:nth-child(37) {
+            left: 42.2%; top: 30.6%; width: 16%; height: 4.7%;
+            @media screen and (min-width: 0) and (max-width: #{$w1 - 1px}) {
+              left: 20.5%; top: 92.19%; width: 36.6%; height: 6.9%;
+            }
+          }
+          &:nth-child(38) {
+            left: 59.2%; top: 30.6%; width: 16%; height: 4.7%;
+            @media screen and (min-width: 0) and (max-width: #{$w1 - 1px}) {
+              left: 59.3%; top: 92.19%; width: 36.6%; height: 6.9%;
+            }
+          }
+          &:nth-child(38) {
+            left: 75.8%; top: 30.6%; width: 16%; height: 4.7%;
+            @media screen and (min-width: 0) and (max-width: #{$w1 - 1px}) {
+              left: 59.3%; top: 92.19%; width: 36.6%; height: 6.9%;
+            }
+          }
         }
         img {
           @media screen and (min-width: 0) and (max-width: #{$w1 - 1px}) {
